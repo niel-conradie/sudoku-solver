@@ -2,7 +2,7 @@ from sudoku import SudokuSolver
 
 
 def run():
-    """ Sudoku Solver. """
+    """Sudoku Solver."""
     run = SudokuSolver()
 
     # Starting sudoku.
@@ -10,14 +10,12 @@ def run():
         [0, 0, 0, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0],
-
         [0, 0, 0, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0],
-
         [0, 0, 0, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0, 0]
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
     ]
 
     # Solve sudoku.
@@ -26,5 +24,5 @@ def run():
     print(sudoku)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     run()

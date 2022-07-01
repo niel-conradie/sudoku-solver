@@ -1,11 +1,9 @@
-
-
 class SudokuSolver:
-    """ A class to represent a Sudoku solver. """
+    """A class to represent a Sudoku solver."""
 
     @staticmethod
     def find_next_empty(puzzle):
-        """ Verify next empty space. """
+        """Verify next empty space."""
         for r in range(9):
             for c in range(9):
                 if puzzle[r][c] == 0:
@@ -14,7 +12,7 @@ class SudokuSolver:
 
     @staticmethod
     def validate(puzzle, guess, row, column):
-        """ Verify a valid guess. """
+        """Verify a valid guess."""
         # Verifying the row.
         row_values = puzzle[row]
         if guess in row_values:
@@ -36,7 +34,7 @@ class SudokuSolver:
         return True
 
     def solver(self, puzzle):
-        """ Solve the sudoku puzzle. """
+        """Solve the sudoku puzzle."""
         row, column = self.find_next_empty(puzzle)
 
         # Return True when solved.

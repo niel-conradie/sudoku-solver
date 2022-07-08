@@ -5,9 +5,8 @@ class SudokuSolver:
     def user_input_location():
         """Requesting user input and validating choice."""
         while True:
-            user_input = input(
-                "\nType 'done' to solve sudoku.\n" + "\nEnter location: "
-            ).lower()
+            user_input = input("\nType 'done' to solve sudoku.\n" +
+                               "\nEnter location: ").lower()
             choices = ['a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'a8', 'a9',
                        'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7', 'b8', 'b9',
                        'c1', 'c2', 'c3', 'c4', 'c5', 'c6', 'c7', 'c8', 'c9',
@@ -225,19 +224,37 @@ class SudokuSolver:
         return sudoku
 
     @staticmethod
-    def display_sudoku():
-        """Display sudoku board locations."""
-        print(
-            "\n| A1 | A2 | A3 | A4 | A5 | A6 | A7 | A8 | A9 |"
-            "\n| B1 | B2 | B3 | B4 | B5 | B6 | B7 | B8 | B9 |"
-            "\n| C1 | C2 | C3 | C4 | C5 | C6 | C7 | C8 | C9 |"
-            "\n| D1 | D2 | D3 | D4 | D5 | D6 | D7 | D8 | D9 |"
-            "\n| E1 | E2 | E3 | E4 | E5 | E6 | E7 | E8 | E9 |"
-            "\n| F1 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 |"
-            "\n| G1 | G2 | G3 | G4 | G5 | G6 | G7 | G8 | G9 |"
-            "\n| H1 | H2 | H3 | H4 | H5 | H6 | H7 | H8 | H9 |"
-            "\n| I1 | I2 | I3 | I4 | I5 | I6 | I7 | I8 | I9 |"
-        )
+    def display_sudoku(puzzle):
+        """Display sudoku board locations and values."""
+        sudoku = puzzle
+        print(f"\n| A1 {sudoku[0][0]} | A2 {sudoku[0][1]} | A3 {sudoku[0][2]} |   "
+              f"| A4 {sudoku[0][3]} | A5 {sudoku[0][4]} | A6 {sudoku[0][5]} |   "
+              f"| A7 {sudoku[0][6]} | A8 {sudoku[0][7]} | A9 {sudoku[0][8]} |"
+              f"\n| B1 {sudoku[1][0]} | B2 {sudoku[1][1]} | B3 {sudoku[1][2]} |   "
+              f"| B4 {sudoku[1][3]} | B5 {sudoku[1][4]} | B6 {sudoku[1][5]} |   "
+              f"| B7 {sudoku[1][6]} | B8 {sudoku[1][7]} | B9 {sudoku[1][8]} |"
+              f"\n| C1 {sudoku[2][0]} | C2 {sudoku[2][1]} | C3 {sudoku[2][2]} |   "
+              f"| C4 {sudoku[2][3]} | C5 {sudoku[2][4]} | C6 {sudoku[2][5]} |   "
+              f"| C7 {sudoku[2][6]} | C8 {sudoku[2][7]} | C9 {sudoku[2][8]} |\n"
+              f"\n| D1 {sudoku[3][0]} | D2 {sudoku[3][1]} | D3 {sudoku[3][2]} |   "
+              f"| D4 {sudoku[3][3]} | D5 {sudoku[3][4]} | D6 {sudoku[3][5]} |   "
+              f"| D7 {sudoku[3][6]} | D8 {sudoku[3][7]} | D9 {sudoku[3][8]} |"
+              f"\n| E1 {sudoku[4][0]} | E2 {sudoku[4][1]} | E3 {sudoku[4][2]} |   "
+              f"| E4 {sudoku[4][3]} | E5 {sudoku[4][4]} | E6 {sudoku[4][5]} |   "
+              f"| E7 {sudoku[4][6]} | E8 {sudoku[4][7]} | E9 {sudoku[4][8]} |"
+              f"\n| F1 {sudoku[5][0]} | F2 {sudoku[5][1]} | F3 {sudoku[5][2]} |   "
+              f"| F4 {sudoku[5][3]} | F5 {sudoku[5][4]} | F6 {sudoku[5][5]} |   "
+              f"| F7 {sudoku[5][6]} | F8 {sudoku[5][7]} | F9 {sudoku[5][8]} |\n"
+              f"\n| G1 {sudoku[6][0]} | G2 {sudoku[6][1]} | G3 {sudoku[6][2]} |   "
+              f"| G4 {sudoku[6][3]} | G5 {sudoku[6][4]} | G6 {sudoku[6][5]} |   "
+              f"| G7 {sudoku[6][6]} | G8 {sudoku[6][7]} | G9 {sudoku[6][8]} |"
+              f"\n| H1 {sudoku[7][0]} | H2 {sudoku[7][1]} | H3 {sudoku[7][2]} |   "
+              f"| H4 {sudoku[7][3]} | H5 {sudoku[7][4]} | H6 {sudoku[7][5]} |   "
+              f"| H7 {sudoku[7][6]} | H8 {sudoku[7][7]} | H9 {sudoku[7][8]} |"
+              f"\n| I1 {sudoku[8][0]} | I2 {sudoku[8][1]} | I3 {sudoku[8][2]} |   "
+              f"| I4 {sudoku[8][3]} | I5 {sudoku[8][4]} | I6 {sudoku[8][5]} |   "
+              f"| I7 {sudoku[8][6]} | I8 {sudoku[8][7]} | I9 {sudoku[8][8]} |"
+              )
 
     @staticmethod
     def find_next_empty(puzzle):

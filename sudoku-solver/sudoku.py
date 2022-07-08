@@ -306,3 +306,20 @@ class SudokuSolver:
             # Backtrack and try new number.
             puzzle[row][column] = 0
         return False
+    
+    @staticmethod
+    def restart():
+        """Requesting user input and validating choice."""
+        while True:
+            user_input = input("\nRestart? Yes/No: ").lower()
+            choices = ['yes', 'no']
+            if user_input not in choices:
+                print("\nPlease type 'yes' or 'no'")
+                continue
+
+            # User input conditions.
+            if user_input == 'yes':
+                return
+            if user_input == 'no':
+                print("\nThank you!")
+                quit()

@@ -10,7 +10,7 @@ def run():
 
     while True:
         # Display sudoku board locations.
-        run.display_sudoku()
+        run.display_sudoku(sudoku)
         # Requesting user input.
         user_input = run.user_input_location()
         # User input continue condition.
@@ -24,7 +24,7 @@ def run():
     # Solve sudoku.
     run.solver(sudoku)
     # Display solved sudoku.
-    print(sudoku)
+    run.display_sudoku(sudoku)
 
 
 if __name__ == '__main__':

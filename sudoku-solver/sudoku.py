@@ -45,165 +45,165 @@ class SudokuSolver:
         sudoku = puzzle
         if user_input_location == "a1":
             sudoku[0][0] = self.user_input_number()
-        if user_input_location == "a2":
+        elif user_input_location == "a2":
             sudoku[0][1] = self.user_input_number()
-        if user_input_location == "a3":
+        elif user_input_location == "a3":
             sudoku[0][2] = self.user_input_number()
-        if user_input_location == "a4":
+        elif user_input_location == "a4":
             sudoku[0][3] = self.user_input_number()
-        if user_input_location == "a5":
+        elif user_input_location == "a5":
             sudoku[0][4] = self.user_input_number()
-        if user_input_location == "a6":
+        elif user_input_location == "a6":
             sudoku[0][5] = self.user_input_number()
-        if user_input_location == "a7":
+        elif user_input_location == "a7":
             sudoku[0][6] = self.user_input_number()
-        if user_input_location == "a8":
+        elif user_input_location == "a8":
             sudoku[0][7] = self.user_input_number()
-        if user_input_location == "a9":
+        elif user_input_location == "a9":
             sudoku[0][8] = self.user_input_number()
-        if user_input_location == "b1":
+        elif user_input_location == "b1":
             sudoku[1][0] = self.user_input_number()
-        if user_input_location == "b2":
+        elif user_input_location == "b2":
             sudoku[1][1] = self.user_input_number()
-        if user_input_location == "b3":
+        elif user_input_location == "b3":
             sudoku[1][2] = self.user_input_number()
-        if user_input_location == "b4":
+        elif user_input_location == "b4":
             sudoku[1][3] = self.user_input_number()
-        if user_input_location == "b5":
+        elif user_input_location == "b5":
             sudoku[1][4] = self.user_input_number()
-        if user_input_location == "b6":
+        elif user_input_location == "b6":
             sudoku[1][5] = self.user_input_number()
-        if user_input_location == "b7":
+        elif user_input_location == "b7":
             sudoku[1][6] = self.user_input_number()
-        if user_input_location == "b8":
+        elif user_input_location == "b8":
             sudoku[1][7] = self.user_input_number()
-        if user_input_location == "b9":
+        elif user_input_location == "b9":
             sudoku[1][8] = self.user_input_number()
-        if user_input_location == "c1":
+        elif user_input_location == "c1":
             sudoku[2][0] = self.user_input_number()
-        if user_input_location == "c2":
+        elif user_input_location == "c2":
             sudoku[2][1] = self.user_input_number()
-        if user_input_location == "c3":
+        elif user_input_location == "c3":
             sudoku[2][2] = self.user_input_number()
-        if user_input_location == "c4":
+        elif user_input_location == "c4":
             sudoku[2][3] = self.user_input_number()
-        if user_input_location == "c5":
+        elif user_input_location == "c5":
             sudoku[2][4] = self.user_input_number()
-        if user_input_location == "c6":
+        elif user_input_location == "c6":
             sudoku[2][5] = self.user_input_number()
-        if user_input_location == "c7":
+        elif user_input_location == "c7":
             sudoku[2][6] = self.user_input_number()
-        if user_input_location == "c8":
+        elif user_input_location == "c8":
             sudoku[2][7] = self.user_input_number()
-        if user_input_location == "c9":
+        elif user_input_location == "c9":
             sudoku[2][8] = self.user_input_number()
-        if user_input_location == "d1":
+        elif user_input_location == "d1":
             sudoku[3][0] = self.user_input_number()
-        if user_input_location == "d2":
+        elif user_input_location == "d2":
             sudoku[3][1] = self.user_input_number()
-        if user_input_location == "d3":
+        elif user_input_location == "d3":
             sudoku[3][2] = self.user_input_number()
-        if user_input_location == "d4":
+        elif user_input_location == "d4":
             sudoku[3][3] = self.user_input_number()
-        if user_input_location == "d5":
+        elif user_input_location == "d5":
             sudoku[3][4] = self.user_input_number()
-        if user_input_location == "d6":
+        elif user_input_location == "d6":
             sudoku[3][5] = self.user_input_number()
-        if user_input_location == "d7":
+        elif user_input_location == "d7":
             sudoku[3][6] = self.user_input_number()
-        if user_input_location == "d8":
+        elif user_input_location == "d8":
             sudoku[3][7] = self.user_input_number()
-        if user_input_location == "d9":
+        elif user_input_location == "d9":
             sudoku[3][8] = self.user_input_number()
-        if user_input_location == "e1":
+        elif user_input_location == "e1":
             sudoku[4][0] = self.user_input_number()
-        if user_input_location == "e2":
+        elif user_input_location == "e2":
             sudoku[4][1] = self.user_input_number()
-        if user_input_location == "e3":
+        elif user_input_location == "e3":
             sudoku[4][2] = self.user_input_number()
-        if user_input_location == "e4":
+        elif user_input_location == "e4":
             sudoku[4][3] = self.user_input_number()
-        if user_input_location == "e5":
+        elif user_input_location == "e5":
             sudoku[4][4] = self.user_input_number()
-        if user_input_location == "e6":
+        elif user_input_location == "e6":
             sudoku[4][5] = self.user_input_number()
-        if user_input_location == "e7":
+        elif user_input_location == "e7":
             sudoku[4][6] = self.user_input_number()
-        if user_input_location == "e8":
+        elif user_input_location == "e8":
             sudoku[4][7] = self.user_input_number()
-        if user_input_location == "e9":
+        elif user_input_location == "e9":
             sudoku[4][8] = self.user_input_number()
-        if user_input_location == "f1":
+        elif user_input_location == "f1":
             sudoku[5][0] = self.user_input_number()
-        if user_input_location == "f2":
+        elif user_input_location == "f2":
             sudoku[5][1] = self.user_input_number()
-        if user_input_location == "f3":
+        elif user_input_location == "f3":
             sudoku[5][2] = self.user_input_number()
-        if user_input_location == "f4":
+        elif user_input_location == "f4":
             sudoku[5][3] = self.user_input_number()
-        if user_input_location == "f5":
+        elif user_input_location == "f5":
             sudoku[5][4] = self.user_input_number()
-        if user_input_location == "f6":
+        elif user_input_location == "f6":
             sudoku[5][5] = self.user_input_number()
-        if user_input_location == "f7":
+        elif user_input_location == "f7":
             sudoku[5][6] = self.user_input_number()
-        if user_input_location == "f8":
+        elif user_input_location == "f8":
             sudoku[5][7] = self.user_input_number()
-        if user_input_location == "f9":
+        elif user_input_location == "f9":
             sudoku[5][8] = self.user_input_number()
-        if user_input_location == "g1":
+        elif user_input_location == "g1":
             sudoku[6][0] = self.user_input_number()
-        if user_input_location == "g2":
+        elif user_input_location == "g2":
             sudoku[6][1] = self.user_input_number()
-        if user_input_location == "g3":
+        elif user_input_location == "g3":
             sudoku[6][2] = self.user_input_number()
-        if user_input_location == "g4":
+        elif user_input_location == "g4":
             sudoku[6][3] = self.user_input_number()
-        if user_input_location == "g5":
+        elif user_input_location == "g5":
             sudoku[6][4] = self.user_input_number()
-        if user_input_location == "g6":
+        elif user_input_location == "g6":
             sudoku[6][5] = self.user_input_number()
-        if user_input_location == "g7":
+        elif user_input_location == "g7":
             sudoku[6][6] = self.user_input_number()
-        if user_input_location == "g8":
+        elif user_input_location == "g8":
             sudoku[6][7] = self.user_input_number()
-        if user_input_location == "g9":
+        elif user_input_location == "g9":
             sudoku[6][8] = self.user_input_number()
-        if user_input_location == "h1":
+        elif user_input_location == "h1":
             sudoku[7][0] = self.user_input_number()
-        if user_input_location == "h2":
+        elif user_input_location == "h2":
             sudoku[7][1] = self.user_input_number()
-        if user_input_location == "h3":
+        elif user_input_location == "h3":
             sudoku[7][2] = self.user_input_number()
-        if user_input_location == "h4":
+        elif user_input_location == "h4":
             sudoku[7][3] = self.user_input_number()
-        if user_input_location == "h5":
+        elif user_input_location == "h5":
             sudoku[7][4] = self.user_input_number()
-        if user_input_location == "h6":
+        elif user_input_location == "h6":
             sudoku[7][5] = self.user_input_number()
-        if user_input_location == "h7":
+        elif user_input_location == "h7":
             sudoku[7][6] = self.user_input_number()
-        if user_input_location == "h8":
+        elif user_input_location == "h8":
             sudoku[7][7] = self.user_input_number()
-        if user_input_location == "h9":
+        elif user_input_location == "h9":
             sudoku[7][8] = self.user_input_number()
-        if user_input_location == "i1":
+        elif user_input_location == "i1":
             sudoku[8][0] = self.user_input_number()
-        if user_input_location == "i2":
+        elif user_input_location == "i2":
             sudoku[8][1] = self.user_input_number()
-        if user_input_location == "i3":
+        elif user_input_location == "i3":
             sudoku[8][2] = self.user_input_number()
-        if user_input_location == "i4":
+        elif user_input_location == "i4":
             sudoku[8][3] = self.user_input_number()
-        if user_input_location == "i5":
+        elif user_input_location == "i5":
             sudoku[8][4] = self.user_input_number()
-        if user_input_location == "i6":
+        elif user_input_location == "i6":
             sudoku[8][5] = self.user_input_number()
-        if user_input_location == "i7":
+        elif user_input_location == "i7":
             sudoku[8][6] = self.user_input_number()
-        if user_input_location == "i8":
+        elif user_input_location == "i8":
             sudoku[8][7] = self.user_input_number()
-        if user_input_location == "i9":
+        elif user_input_location == "i9":
             sudoku[8][8] = self.user_input_number()
         return sudoku
 

@@ -307,6 +307,34 @@ class SudokuSolver:
             puzzle[row][column] = 0
         return False
     
+    def start_app(self):
+        """Starting sudoku solver application."""
+        while True:
+            # Starting empty sudoku.
+            sudoku = self.empty_sudoku()
+
+            while True:
+                # Display sudoku board locations.
+                self.display_sudoku(sudoku)
+                # Requesting user input.
+                user_input = self.user_input_location()
+                # User input continue condition.
+                if user_input == 'done':
+                    break
+                # Assign user input to appropriate location.
+                self.user_input_allocation(sudoku, user_input)
+
+                continue
+
+            # Solve sudoku.
+            self.solver(sudoku)
+            # Display solved sudoku.
+            self.display_sudoku(sudoku)
+            # Requesting user input.
+            self.restart()
+
+            continue
+    
     @staticmethod
     def restart():
         """Requesting user input and validating choice."""

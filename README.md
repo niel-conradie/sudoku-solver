@@ -15,8 +15,8 @@ Sudoku Solver can be installed via [Pip](https://pypi.org/project/pip/). To star
 
 * **Clone Repository**
 ```bash
-  $ git clone https://github.com/niel-conradie/Sudoku-Solver.git
-  $ cd Sudoku-Solver
+  $ git clone https://github.com/niel-conradie/sudoku-solver.git
+  $ cd sudoku-solver
 ```
 ### **Pip Install**
 

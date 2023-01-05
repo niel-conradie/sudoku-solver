@@ -360,5 +360,4 @@ class SudokuSolver:
             elif user_input == 1:
                 return
             elif user_input == 2:
-                print("\nThank you!")
-                quit()
+                quit("\nThank you!")

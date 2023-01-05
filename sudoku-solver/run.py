@@ -10,7 +10,7 @@ def run():
         run.start_app()
     except KeyboardInterrupt:
         # Stopping the application.
-        exit("\n\nProgram Terminated")
+        quit("\n\nProgram Terminated")
 
 
 if __name__ == "__main__":

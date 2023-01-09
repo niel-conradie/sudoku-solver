@@ -1,8 +1,7 @@
 from sudoku import SudokuSolver
 
 
-def run():
-    """Sudoku Solver."""
+if __name__ == "__main__":
     run = SudokuSolver()
 
     try:
@@ -11,7 +10,3 @@ def run():
     except KeyboardInterrupt:
         # Stopping the application.
         quit("\n\nProgram Terminated")
-
-
-if __name__ == "__main__":
-    run()
